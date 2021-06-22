@@ -1,5 +1,9 @@
 body {
   font-family: var(--main-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 /* img {
@@ -19,13 +23,24 @@ p {
   margin: 0px;
 } */
 
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .logo {
   font-family: var(--secondary-font);
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--black-color);
 }
 
@@ -34,9 +49,8 @@ p {
 }
 
 .menu-link {
-  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: inherit;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--black-color);
@@ -48,9 +62,7 @@ p {
 }
 
 .contacts-link {
-  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
@@ -66,7 +78,6 @@ p {
 }
 
 .title {
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -77,7 +88,6 @@ p {
 }
 
 .hero-button {
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -94,23 +104,18 @@ p {
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: rgba(24, 140, 232, 1);
+  background-color: var(--hero-button-hover);
 }
 
 .advantage-subject {
   font-weight: bold;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--black-color);
 }
 
 .advantage-desc {
-  font-weight: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
 
@@ -119,7 +124,6 @@ p {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--black-color);
 }
 
@@ -132,7 +136,6 @@ p {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--black-color);
 }
 
@@ -141,16 +144,15 @@ p {
   font-size: 16px;
   line-height: 1.19;
   /* text-align: center; */
-  letter-spacing: 0.03em;
+  letter-spacing: inherit;
   color: var(--black-color);
 }
 
 .team-desc {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
   /* text-align: center; */
-  letter-spacing: 0.03em;
+  letter-spacing: inherit;
   color: var(--secondary-color);
 }
 
@@ -160,11 +162,10 @@ p {
 
 .footer-logo {
   font-family: var(--secondary-font);
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  letter-spacing: inherit;
   color: var(--accent-color);
 }
 
@@ -173,18 +174,12 @@ p {
 }
 
 .adress-text {
-  font-weight: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--white-color);
 }
 
 .adress-link {
-  font-weight: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--adress-link-color);
 }
 
@@ -193,15 +188,18 @@ p {
   color: var(--accent-color);
 }
 
+.current {
+  color: var(--accent-color);
+}
+
 /* ============== PORTFOLIO ============ */
 
 .button-item {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   /* text-align: center; */
-  letter-spacing: 0.03em;
+  letter-spacing: inherit;
   color: var(--black-color);
   background-color: var(--background-team);
   border-radius: 4px;
@@ -226,9 +224,8 @@ p {
 }
 
 .portfolio-cards-desc {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
+  letter-spacing: inherit;
   color: var(--secondary-color);
 }
